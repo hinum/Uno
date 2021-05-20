@@ -26,7 +26,7 @@ def datatoemo(deck):
   return r
 
 async def show(ctx,event):
-  print(event)
+  #print(event)
   eventxt = ""
   if event != None:
     for n in event[1]:
@@ -34,7 +34,6 @@ async def show(ctx,event):
   i = 0
   mdata = data[dirtl[ctx.author.name]]
   for tcid in jsonh.gd(ctx.guild)["t"][:len(dirtl[ctx.author.name])]:
-    i = 0
     channel = ctx.guild.get_channel(tcid)
     await mess[ctx.author.name].edit(content = eventxt,embed = now(list(mdata.hands.keys())[i]))
     i += 1
