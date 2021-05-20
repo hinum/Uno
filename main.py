@@ -8,7 +8,7 @@ async def on_ready():
   jsonh.load()
   print("ok")
 
-@client.event
+#@client.event
 async def on_command_error(ctx,error):
   await ctx.send("error ):")
 
